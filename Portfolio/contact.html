@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Contact - Sumit Kumar Portfolio</title>
+</head>
+
+<style>
+
+    .social-link {
+        display: inline-block; 
+        margin: 0 10px; 
+    }
+
+    .social-link i {
+        font-size: 1.5rem; 
+    }
+
+    .social-link[href*="facebook.com"] i {
+        color: #1877f2; 
+    }
+
+    .social-link[href*="instagram.com"] i {
+        color: #e4405f; 
+    }
+
+    .social-link[href*="linkedin.com"] i {
+        color: #1da1f2; 
+    }
+
+    #contact-form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .contact-form-container {
+        background: #f9f9f9; 
+        border-radius: 10px; 
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .contact-form-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333; 
+    }
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 1rem; 
+    }
+
+    .form-group {
+        flex: 1 1 calc(50% - 1rem); 
+        margin-bottom: 15px; 
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold; 
+        color: #333; 
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%; 
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        border-radius: 5px; 
+        box-sizing: border-box; 
+    }
+
+    .form-group textarea {
+        resize: vertical; 
+    }
+
+    button {
+        background-color: #0066cc; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px; 
+        padding: 10px 20px; 
+        cursor: pointer; 
+        font-size: 1rem; 
+        transition: background-color 0.3s; 
+        display: block;
+        width: 100%; 
+    }
+
+    button:hover {
+        background-color: #004a99; 
+    }
+
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <i class="fa-brands fa-slack"></i>
+            Portfolio
+        </a>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <section id="contact">
+
+    <div class="contact-content">
+        <h1>Contact Me</h1>
+        <p>
+            Thank you for visiting my portfolio. I'm excited to connect with you and explore potential collaborations or opportunities. Whether you have a project in mind, need help with something, or just want to chat, feel free to reach out to me.
+        </p>
+        
+        <!-- Contact Details -->
+        <div class="contact-details">
+
+            <div class="detail-card">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:officialsumitkumar31@gmail.com">officialsumitkumar31@gmail.com</a></p>
+            </div>
+
+            <div class="detail-card">
+                <i class="fas fa-phone"></i>
+                <p>Phone: <a href="tel:+918178052288">+91 8178052288</a></p>
+            </div>
+    
+            <div class="detail-card">
+                <i class="fas fa-share-alt"></i>
+                <p>Social: 
+                    <a href="https://www.instagram.com/sumit_kumar.11/" class="social-link">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                    <a href="https://www.facebook.com/sumit.kumar.2004?mibextid=ZbWKwL" class="social-link">
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-659751310/" class="social-link">
+                        <i class="fab fa-linkedin"></i> 
+                    </a>
+                    <a href="https://github.com/Sumitkumar136" class="social-link">
+                        <i class="fab fa-github"></i> 
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact-form">
+
+        <div class="contact-form-container">
+            <h2>Contact Form</h2>
+            <form method="post">
+                
+                <div class="form-row">
+                    
+                    <div class="form-group">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="subject"></label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About</h3>
+                <p>
+                    I'm Sumit Kumar, 
+                    a technology enthusiast with a passion for programming and data analysis. 
+                    I aim to make an impact through innovation and creative solutions.
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: officialsumitkumar31@gmail.com</p>
+                <p>Phone: +91 8178052288</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/sumit_kumar.11/" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sumit.kumar.2004?mibextid=ZbWKwL" class="footer-social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-659751310/" class="footer-social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Sumitkumar136" class="footer-social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sumit Kumar. All rights reserved. | Designed by Sumit Kumar</p>
+    </div>
+</body>
+</html>

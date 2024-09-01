@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<style>
+
+    /* Projects Section */
+    .projects {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .projects h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 250px; 
+        height: 150px; 
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none; 
+        color: inherit; 
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 150px; 
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .project-card h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #333;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card:hover h3 {
+        opacity: 1;
+    }
+
+    /* Media Query for Responsive Design */
+    @media (max-width: 768px) {
+        .projects-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-card {
+            width: 90%;
+            max-width: 600px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <i class="fa-brands fa-slack"></i>
+            Portfolio
+        </a>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Latest Project Section -->
+    <section class="latest-project">
+        <h2>Latest Project</h2>
+        <div class="underline"></div>
+        <p>Details about your latest project will go here. You can include a brief description, some highlights, and a link to the project if available.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>All Projects</h2>
+        <div class="projects-container">
+
+            <!-- Project Card -->
+            <a href="./Projects/log-book-for-daily-expense.html" class="project-card">
+                <img src="./Images/expense.jpg" alt="Project 1">
+                <h3>Log Book for Daily Expense</h3>
+            </a>
+
+            <a href="./Projects/tic-tac-toe.html" class="project-card">
+                <img src="./Images/tic.jpg" alt="Project 2">
+                <h3>Tic Tac Toe</h3>
+            </a>
+
+            <a href="./Projects/attendance-management-system.html" class="project-card">
+                <img src="./Images/Attendance-Management-System.png" alt="Project 3">
+                <h3>Attendance Management System</h3>
+            </a>
+
+            <a href="./Projects/bank-management-system.html" class="project-card">
+                <img src="./Images/bank management.jpg" alt="Project 5">
+                <h3>Banking Management System</h3>
+            </a>
+
+            <a href="./Projects/hotel-booking-website.html" class="project-card">
+                <img src="./Images/hotel-booking.jpg" alt="Project 6">
+                <h3>Hotel Booking Website</h3>
+            </a>
+
+            <a href="./Projects/true-travel-website.html" class="project-card">
+                <img src="./Images/travel.jpg" alt="Project 7">
+                <h3>True Travel Website</h3>
+            </a>
+
+            <a href="./Projects/calculator-website.html" class="project-card">
+                <img src="./Images/calculator.jpg" alt="Project 8">
+                <h3>Calculator Website</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About</h3>
+                <p>
+                    I'm Sumit Kumar, 
+                    a technology enthusiast with a passion for programming and data analysis. 
+                    I aim to make an impact through innovation and creative solutions.
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: officialsumitkumar31@gmail.com</p>
+                <p>Phone: +91 8178052288</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/sumit_kumar.11/" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sumit.kumar.2004?mibextid=ZbWKwL" class="footer-social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-659751310/" class="footer-social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Sumitkumar136" class="footer-social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sumit Kumar. All rights reserved. | Designed by Sumit Kumar</p>
+    </div>
+
+</body>
+</html>

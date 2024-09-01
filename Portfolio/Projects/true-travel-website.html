@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<style>
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-title {
+        text-align: center;
+        font-size: 2.5em; 
+        margin-bottom: 20px;
+    }
+
+    .project-images {
+        display: flex;
+        justify-content: center;
+        gap: 15px; 
+        margin-bottom: 20px;
+        flex-wrap: wrap; 
+    }
+
+    .project-images img {
+        width: 400px; 
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .project-description {
+        font-size: 1.4em; 
+        line-height: 1.6;
+    }
+
+    .back-button {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        padding: 12px 24px; 
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px; 
+    }
+
+    .back-button:hover {
+        background-color: #555;
+    }
+
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-rectangle-list"></i>
+            Projects
+        </a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Details -->
+    <div class="container">
+        <h1 class="project-title">True Travel Website</h1>
+        
+        <!-- Project Images -->
+        <div class="project-images">
+
+            <img src="../Images/tur.png" alt="True Travel Website Screenshot 1">
+            <img src="../Images/tur2.png" alt="True Travel Website Screenshot 2">
+            <img src="../Images/tur3.png" alt="True Travel Website Screenshot 3">
+            <img src="../Images/tur4.png" alt="True Travel Website Screenshot 3">
+            
+        </div>
+        >
+        <div class="project-description">
+            <p>
+                The True Travel Website is an engaging web application designed to offer a seamless and interactive travel booking experience. Built using modern web technologies, this project showcases a user-friendly interface where visitors can explore various destinations, view detailed information about each location, and book travel packages. The site features a responsive design, ensuring an optimal viewing experience across different devices. With a focus on aesthetics and functionality, the True Travel Website highlights my ability to create dynamic and visually appealing web applications, demonstrating expertise in HTML, CSS, and JavaScript.
+            </p>
+        </div>
+        
+        <a href="../portfolio.html" class="back-button">Back to Portfolio</a>
+    </div>
+</body>
+</html>

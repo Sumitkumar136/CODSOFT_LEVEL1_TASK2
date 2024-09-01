@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Resume - Portfolio</title>
+</head>
+
+<style>
+
+    /* Skills Section */
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .skill-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-item h4 {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .skill-bar {
+        height: 8px;
+        background-color: #3647df;
+        border-radius: 5px;
+        margin-top: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+
+    .skill-bar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: #5d5d5d;
+        transition: width 0.3s ease;
+    }
+
+    .skill-item:hover .skill-bar {
+        width: 100%;
+    }
+
+    .skill-item:hover .skill-bar::before {
+        width: 100%;
+    }
+
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <a href="index.html" class="logo">
+            <i class="fa-brands fa-slack"></i>
+            Portfolio
+        </a>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./resume.html" class="active">Resume</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="resume-content">
+            <h1>Resume</h1>
+
+            <a href="./Sumit_Kumar_Resume.pdf" download="Sumit_Kumar_Resume.pdf" class="download-button">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+
+            <!-- Professional Summary -->
+            <div class="resume-section">
+                <h2>Professional Summary</h2>
+                <p>I am a technology enthusiast with strong skills in programming and data analysis. My expertise includes a variety of programming languages and tools, and I am committed to delivering innovative solutions to complex problems.</p>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section">
+
+                <h2>Education</h2>
+
+                <div class="education-grid">
+
+                    <div class="education-item">
+                        <h3>10th Grade</h3>
+                        <p><strong>Divine Happy Senior Secondary School </strong> | <em>Delhi</em> | <span>2020</span></p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>12th Grade</h3>
+                        <p><strong>D.S Memorial Public Senior Secondary School</strong> | <em>Delhi</em> | <span>2022</span></p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p><strong>Jagannath Community College</strong> | <em>Delhi</em> | <span>2022 - 2025</span></p>
+                        <ul>
+                            <li>Relevant coursework: Programming, Data Analysis, etc.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Skills -->
+            <div class="resume-section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>C++</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 100%;"></div>
+                            <span class="skill-percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>C</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 100%;"></div>
+                            <span class="skill-percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>PHP</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>Java</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 60%;"></div>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-content">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="resume-section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h3>Log book for Daily Expences</h3>
+                        <p>The Log Book for Daily Expense is a tool designed to help users track and manage their daily expenditures efficiently. It allows users to record their expenses, categorize them, and view detailed summaries and reports.</p>
+                        <a href="./Projects/log-book-for-daily-expense.html">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>TIC TAK TOE</h3>
+                        <p>A popular two-player game created with Python is called TIC TAC TOE. This project enables two players to play a grid-based game against one another in which they alternately mark the symbol ('X' or 'O') on the grid. When three of a player's symbols are successfully placed in a horizontal, vertical, or diagonal line, the game is over; alternatively, if the grid is filled in entirely and a draw occurs, the game is over.</p>
+                        <a href="./Projects/tic-tac-toe.html">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Attendance Management System</h3>
+                        <p>The Attendance Management System is a C++ project designed to efficiently manage and track student attendance. The system allows users to log attendance, view attendance records, and generate reports. It features a user-friendly interface for both administrators and users, ensuring that data entry and retrieval are straightforward and efficient.</p>
+                        <a href="./Projects/attendance-management-system.html">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>True Travel Website</h3>
+                        <p>The True Travel Website is an engaging web application designed to offer a seamless and interactive travel booking experience. Built using modern web technologies, this project showcases a user-friendly interface where visitors can explore various destinations, view detailed information about each location, and book travel packages.</p>
+                        <a href="./Projects/true-travel-website.html">View Project</a>
+                    </div>
+
+                    
+                    
+                </div>
+                <div class="more-projects-container">
+                    <a href="./portfolio.html" class="more-projects-link">More Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About</h3>
+                <p>
+                    I'm Sumit Kumar, 
+                    a technology enthusiast with a passion for programming and data analysis. 
+                    I aim to make an impact through innovation and creative solutions.
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: officialsumitkumar31@gmail.com</p>
+                <p>Phone: +91 8178052288</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/sumit_kumar.11/" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sumit.kumar.2004?mibextid=ZbWKwL" class="footer-social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-659751310/" class="footer-social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Sumitkumar136" class="footer-social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sumit Kumar. All rights reserved. | Designed by Sumit Kumar</p>
+    </div>
+    
+</body>
+</html>
